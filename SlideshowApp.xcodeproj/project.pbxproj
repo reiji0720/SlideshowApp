@@ -12,6 +12,7 @@
 		B5D64B531FDD441700F4E4EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D64B511FDD441700F4E4EE /* Main.storyboard */; };
 		B5D64B551FDD441700F4E4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D64B541FDD441700F4E4EE /* Assets.xcassets */; };
 		B5D64B581FDD441700F4E4EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D64B561FDD441700F4E4EE /* LaunchScreen.storyboard */; };
+		B5D64B601FDD460100F4E4EE /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D64B5F1FDD460100F4E4EE /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B5D64B541FDD441700F4E4EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5D64B571FDD441700F4E4EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5D64B591FDD441700F4E4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D64B5F1FDD460100F4E4EE /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				B5D64B4D1FDD441700F4E4EE /* AppDelegate.swift */,
 				B5D64B4F1FDD441700F4E4EE /* ViewController.swift */,
+				B5D64B5F1FDD460100F4E4EE /* ResultViewController.swift */,
 				B5D64B511FDD441700F4E4EE /* Main.storyboard */,
 				B5D64B541FDD441700F4E4EE /* Assets.xcassets */,
 				B5D64B561FDD441700F4E4EE /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				B5D64B501FDD441700F4E4EE /* ViewController.swift in Sources */,
 				B5D64B4E1FDD441700F4E4EE /* AppDelegate.swift in Sources */,
+				B5D64B601FDD460100F4E4EE /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +269,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G3538NJJP9;
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.reiji.kobayashi.SlideshowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G3538NJJP9;
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.reiji.kobayashi.SlideshowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
