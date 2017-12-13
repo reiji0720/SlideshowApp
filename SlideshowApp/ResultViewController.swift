@@ -13,13 +13,13 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var imageview: UIImageView!
     // 受け取るためのプロパティ（変数）を宣言しておく
     var x:Int = 0
-
+     let imageArray = ["1.jpg","2.jpg","3.jpg"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        if x == 1{
+        /*if x == 1{
             
             imageview.image = UIImage(named: "1.jpg")
         }
@@ -29,8 +29,8 @@ class ResultViewController: UIViewController {
         else{
             
             imageview.image = UIImage(named: "3.jpg")
-        }
-
+        }*/
+imageview.image = UIImage(named: imageArray[x])
     }
 
     override func didReceiveMemoryWarning() {

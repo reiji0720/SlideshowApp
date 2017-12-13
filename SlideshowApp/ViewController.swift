@@ -10,19 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let image1:UIImage = UIImage(named:"1.jpg")!
-    let image2:UIImage = UIImage(named:"2.jpg")!
-    let image3:UIImage = UIImage(named:"3.jpg")!
+    //let image1:UIImage = UIImage(named:"1.jpg")!
+    //let image2:UIImage = UIImage(named:"2.jpg")!
+    //let image3:UIImage = UIImage(named:"3.jpg")!
+    
+    let imageArray = ["1.jpg","2.jpg","3.jpg"]
     
     @IBOutlet weak var buttonimg: UIButton!
-    var defaultimg:Int = 1
-
+    //var defaultimg:Int = image[0]
+    
+    
+    
+    var changeimage:UIImage!
+    
+    
+    var nownumber:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //初期画像を1に設定
-        buttonimg.setImage(image1, for: UIControlState())
+        changeimage = UIImage(named:imageArray[nownumber])
+        buttonimg.setImage(changeimage, for: UIControlState())
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +44,7 @@ class ViewController: UIViewController {
         // segueから遷移先のResultViewControllerを取得する
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         // 遷移先のResultViewControllerで宣言しているxに値を代入して渡す
-        resultViewController.x = defaultimg
+        resultViewController.x = nownumber //defaultimg
         
     }
     //戻るボタンのかえり
@@ -43,7 +53,17 @@ class ViewController: UIViewController {
     }
     //進む処理
     @IBAction func nextaction(_ sender: Any) {
-        print ("0")
+        if nownumber < imageArray.count-1{
+        nownumber += 1
+            changeimage = UIImage(named:imageArray[nownumber])
+            buttonimg.setImage(changeimage, for: UIControlState())
+        }
+        else{
+        nownumber = 0
+            changeimage = UIImage(named:imageArray[nownumber])
+            buttonimg.setImage(changeimage, for: UIControlState())
+        }
+        /*print ("0")
         if defaultimg == 1{
             print ("1")
             buttonimg.setImage(image2, for: UIControlState())
@@ -58,11 +78,21 @@ class ViewController: UIViewController {
             print ("3")
             buttonimg.setImage(image1, for: UIControlState())
             defaultimg = 1
-        }
+        }*/
     }
     //戻る処理
     @IBAction func backaction(_ sender: Any) {
-        if defaultimg == 1{
+        if nownumber > 0{
+            nownumber -= 1
+            changeimage = UIImage(named:imageArray[nownumber])
+            buttonimg.setImage(changeimage, for: UIControlState())
+        }
+        else{
+            nownumber = imageArray.count-1
+            changeimage = UIImage(named:imageArray[nownumber])
+            buttonimg.setImage(changeimage, for: UIControlState())
+        }
+        /*if defaultimg == 1{
             buttonimg.setImage(image3, for: UIControlState())
             defaultimg = 3
         }
@@ -73,7 +103,7 @@ class ViewController: UIViewController {
         else if defaultimg == 3{
             buttonimg.setImage(image2, for: UIControlState())
             defaultimg -= 1
-        }
+        }*/
     }
     var timer: Timer!
     var onoff = false
