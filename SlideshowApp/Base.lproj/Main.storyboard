@@ -94,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0l3-ic-t01">
-                                <rect key="frame" x="176" y="395" width="62" height="30"/>
+                                <rect key="frame" x="192" y="395" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="dJk-YO-17u" kind="unwind" unwindAction="okaeri:" id="zlh-ni-x3t"/>
@@ -110,10 +110,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="D66-pJ-2vT" firstAttribute="trailing" secondItem="9q0-L0-vja" secondAttribute="trailingMargin" id="30M-6h-0V6"/>
-                            <constraint firstItem="0l3-ic-t01" firstAttribute="leading" secondItem="9q0-L0-vja" secondAttribute="leadingMargin" constant="156" id="8Q7-fh-e6f"/>
+                            <constraint firstItem="0l3-ic-t01" firstAttribute="top" secondItem="D66-pJ-2vT" secondAttribute="bottom" constant="132" id="4R4-JB-dFF"/>
                             <constraint firstItem="D66-pJ-2vT" firstAttribute="top" secondItem="OpJ-w1-QUY" secondAttribute="bottom" constant="50" id="OG9-HU-Bjt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0l3-ic-t01" secondAttribute="trailing" constant="156" id="dgn-2O-9Se"/>
-                            <constraint firstItem="0l3-ic-t01" firstAttribute="top" secondItem="D66-pJ-2vT" secondAttribute="bottom" constant="132" id="diX-n6-aio"/>
+                            <constraint firstItem="0l3-ic-t01" firstAttribute="centerX" secondItem="9q0-L0-vja" secondAttribute="centerX" id="dMB-pU-UUa"/>
                             <constraint firstItem="D66-pJ-2vT" firstAttribute="leading" secondItem="9q0-L0-vja" secondAttribute="leadingMargin" id="hEe-RB-OVl"/>
                         </constraints>
                     </view>

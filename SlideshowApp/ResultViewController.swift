@@ -19,18 +19,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        /*if x == 1{
-            
-            imageview.image = UIImage(named: "1.jpg")
-        }
-        else if x == 2{
-            imageview.image = UIImage(named: "2.jpg")
-        }
-        else{
-            
-            imageview.image = UIImage(named: "3.jpg")
-        }*/
-imageview.image = UIImage(named: imageArray[x])
+      imageview.image = UIImage(named: imageArray[x])
     }
 
     override func didReceiveMemoryWarning() {
